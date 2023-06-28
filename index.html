@@ -91,9 +91,9 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <!-- <a class="navbar-brand" href="index.html">
                         <img src="assets/img/al_icon.png" class="logo" alt="Logo">
-                    </a>
+                    </a> -->
                 </div>
                 <!-- End Header Navigation -->
 
@@ -855,7 +855,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="work-available">
                         <h2 class="title">I'm <strong>available</strong> for <br> freelance work</h2>
-                        <a class="btn btn-md circle btn-theme smooth-menu" onclick="showEmail()" id="hire">Hire me now</a>
+                        <a style="width: 100%;" class="btn btn-md circle btn-theme smooth-menu" onclick="showEmail()" id="hire">Hire me now</a>
                     </div>
                 </div>
             </div>
@@ -864,7 +864,7 @@
     <script>
         function showEmail() {
             var hire = document.getElementById("hire");
-            hire.innerHTML = "<a href='mailto:ahmed.limam.2001@gmail.com'><i class='fas fa-envelope'></i>&nbsp;&nbsp;<span style='text-transform: lowercase;'>ahmed.limam.2001@gmail.com</span></a>";
+            hire.innerHTML = "<a style='width:100%;display:grid;justify-content:center;' href='mailto:ahmed.limam.2001@gmail.com'><i class='fas fa-envelope'></i>&nbsp;&nbsp;<span style='text-transform: lowercase;'>ahmed.limam.2001@gmail.com</span></a>";
         }
     </script>
 
