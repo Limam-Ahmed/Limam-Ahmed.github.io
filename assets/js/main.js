@@ -376,13 +376,11 @@
         Preloader Init
      ===============================================*/
 	 function loader() {
-        $(window).on('load', function () {
-            setTimeout(function() {
-		$('#ambrox-preloader').addClass('loaded');
-		$("#loading").fadeOut(500);
-	  	}, 1000); 
-  	    // $('#ambrox-preloader').addClass('loaded');
-            // $("#loading").fadeOut(500);
+        // $(window).on('load', function () {
+			setTimeout(function() {
+				$('#ambrox-preloader').addClass('loaded');
+            	$("#loading").fadeOut(500);
+			  }, 1000); 
             // Una vez haya terminado el preloader aparezca el scroll
 
             if ($('#ambrox-preloader').hasClass('loaded')) {
