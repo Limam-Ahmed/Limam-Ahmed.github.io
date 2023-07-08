@@ -377,8 +377,12 @@
      ===============================================*/
 	 function loader() {
         $(window).on('load', function () {
-            $('#ambrox-preloader').addClass('loaded');
-            $("#loading").fadeOut(500);
+            setTimeout(function() {
+		$('#ambrox-preloader').addClass('loaded');
+		$("#loading").fadeOut(500);
+	  	}, 1000); 
+  	    // $('#ambrox-preloader').addClass('loaded');
+            // $("#loading").fadeOut(500);
             // Una vez haya terminado el preloader aparezca el scroll
 
             if ($('#ambrox-preloader').hasClass('loaded')) {
@@ -387,7 +391,7 @@
                     $(this).remove();
                 });
             }
-        });
+        // });
     }
     loader();
 
